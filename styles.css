@@ -328,3 +328,59 @@ body{
         grid-template-columns: repeat(1,1fr);
     }
 }
+.test-container{
+     background-color: var(--background-color);
+     padding: 2rem;
+     margin: 0 auto;
+
+}
+.text-title{
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+.test-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap:2rem;
+}
+.test-content{
+    max-width: 1028px;
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem;
+    margin: 0 auto;
+}
+.test-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(95, 86, 86);
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgb(116, 108, 108);
+    padding:0.8rem;
+    gap: 1rem;
+    transition: transform 0.3s ease , box-shdow 0.3s ease;
+}
+.test-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+    border: 1px solid blue;
+}
+.test-img{
+    height: 5rem;
+    width: 5rem;
+}
+.test-description{
+    font-size: 0.6rem;
+    color: #555;
+}
+.test-name{
+    font-size: 0.875rem;
+    color: var(--primary-color);
+}
+.test-designation{
+    font-size: 0.6rem;
+    color: #777;
+
+}
